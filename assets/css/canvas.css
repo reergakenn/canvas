@@ -1,0 +1,183 @@
+/*Nneka L. Greer-RHET 4307: Writing Software Documentation*/
+/*Project 3-Final: Mini Help Site (Chrome Canvas) 5-12-2020*/
+
+
+/* ALL pages*/
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; 
+}
+html {
+   box-sizing: border-box;
+   margin: auto;
+}
+
+body {
+  font-family:'Raleway',cursive,sans-serif;
+  font-size: 18px;
+  letter-spacing: .5px;  
+}
+.home-main{
+  background:  linear-gradient(180deg, #5f126d 0%, /* dk. purple*/
+                       rgba(255, 255, 255, 0) 100%),
+                        #e6b3ff;
+}
+main{
+    width: 80vw;
+    margin: auto;
+    padding: 20px;
+  }
+  a{
+    text-decoration: none;
+    padding: 12px 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  h1 { /* Chrome Canvas title*/
+      text-align: center;
+      font-family:'Quintessential',cursive,sans-serif;   
+      padding:50px 0 30px 0;
+  }
+  
+  h1 a { /* Chrome Canvas title*/
+    color: #fff; /* shortcut for white*/
+    font-size: 250%;
+    text-decoration: none;/* no underline*/   
+  }
+  h1 a:hover,a:active {/*link hover color*/
+      background-color: rgba(0,0,0,0.2);
+    padding:0 15px 0 10px;
+    border-radius: 10px;
+    border:5px solid;
+    opacity: 0.3;
+    transition: 0.3s;
+  }
+  p{
+    font-family: 'Ibarra Real Nova', serif;
+  }
+  
+  #nav ul  { /* nav bar*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none; /* no bullet points*/
+    font-size: 150%;
+    padding:10px 0 10px 0;
+  }
+  
+  #nav li a { /*link color*/
+     color: #fff;
+     text-decoration: none;/* no underline*/ 
+  }
+  
+  #nav a:hover,a:active {/*link hover color*/
+      background-color: rgba(0,0,0,0.2);
+      padding:15px 10px 15px 10px;
+      border:3px solid;
+      border-radius: 10px;
+      opacity: 0.3;
+      transition: 0.3s;
+  }
+
+  /* Home css*/
+  #home-intro, #home-projects, #home-faq {
+    text-align: center;
+    color: #f1f1f1;
+    font-family:'Quintessential',cursive,sans-serif; 
+    font-size: 150%; 
+    margin: 10px 30px 10px 70px;
+  }
+
+  #home-intro { /*purple lines around intro*/
+    border-top:5px solid #5F126D;
+    border-bottom: 5px solid #5F126D;
+    border-radius: 10px;  
+    font-size: 200%;
+   }
+  
+  /* ABOUT css*/
+#myself {  /* picture of me */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding:15px; 
+}
+
+#myself img {
+ border-radius: 150px;
+}
+
+#about-intro, #about-school, #about-projects {
+  text-align: center;
+  color: #f1f1f1;
+  font-family:'Quintessential',cursive,sans-serif; 
+  font-size: 150%; 
+}
+
+/*--PPROJECTS css*/
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.tutorial{ /*large purple area surrounding content*/
+color:#f1f1f1;
+width: 100%;
+height: auto;
+margin: 20px auto;
+padding: 20px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-content: center;
+background: rgba(95, 18, 109, 0.534);
+}
+.proj-content p{
+  color:#f1f1f1;
+  width: 47%;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.295);
+  border-radius: 10px;
+}
+.projects {
+    margin:100px;
+    padding:15px;
+    text-align: center;
+}
+.projects section {
+  color:#f1f1f1;
+}
+.projects ul li {
+  list-style-type: none; /* no bullet points*/
+}
+/*--FAQ css*/
+details{
+  text-align: center;
+  padding:40px;
+  line-height:10%;
+}
+
+details p{
+  color:#f1f1f1;
+}
+
+
+  /* FOOTER*/
+
+footer {
+    text-align:center;
+    font-size:larger;
+  }
